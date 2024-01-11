@@ -1,13 +1,15 @@
 function deepEquals(a, b) {
  if (a === b) {
     // Handle NaN case
-    if (Number.isNaN(a) && Number.isNaN(b)) {
-      return true;
-    }else{
-		return false;
-	}
+    // if (Number.isNaN(a) && Number.isNaN(b)) {
+    //   return true;
+    // }
     return true;
   }
+
+  if (Number.isNaN(a) && Number.isNaN(b)) {
+      return true;
+    }
 
   // Check for different types
   if (typeof a !== typeof b) {
