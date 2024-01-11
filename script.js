@@ -4,7 +4,7 @@ function deepEquals(a, b) {
     if (Number.isNaN(a) && Number.isNaN(b)) {
       return true;
     }
-    return true;
+    return false;
   }
 
   // Check for different types
