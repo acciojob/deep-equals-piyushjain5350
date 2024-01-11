@@ -3,8 +3,10 @@ function deepEquals(a, b) {
     // Handle NaN case
     if (Number.isNaN(a) && Number.isNaN(b)) {
       return true;
-    }
-    return false;
+    }else{
+		return false;
+	}
+    return true;
   }
 
   // Check for different types
